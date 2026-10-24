@@ -1,8 +1,820 @@
-/* Chat Background Image */
-.chatContent_f75fb0 {
-    background-color: transparent !important;
-    background-image: url("https://i.ibb.co/BWHgPNS/7a50494f6bf4c6f5d29a87011fd9d671.jpg") !important;
-    background-position: center center !important;
-    background-size: cover !important;
-    background-repeat: no-repeat !important;
+:root {
+    --custom-discord-wallpaper: url("https://i.ibb.co/4n1Lpppj/bc19a80616467b494dca539a33625d9c.jpg");
 }
+
+/* 배경 이미지 레이어 */
+#app-mount::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-image: var(--custom-discord-wallpaper);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* 검정색 오버레이 레이어 */
+#app-mount::after {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/*기존 백그라운드화면 투명화*/
+body.bd-transparency,
+#app-mount,
+.app__160d8,
+.bg__960e4 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   디스코드 서버 채널 목록 배경색 설정
+   ======================================== */
+
+:root {
+    /* 서버 및 채널 목록 전체 배경 */
+    --channel-sidebar-bg: rgba(0, 0, 0, 0);
+
+    /* 읽지 않은 메시지 표시 바 */
+    --channel-unread-bar-bg: rgba(0, 0, 0, 0);
+
+    /* 채널 카테고리 구분선 */
+    --channel-section-divider-bg: rgba(0, 0, 0, 0);
+
+    /* 읽지 않은 채널 표시점 */
+    --channel-unread-indicator-bg: rgba(0, 0, 0,);
+
+    /* 채널 링크 배경 */
+    --channel-link-bg: rgba(0, 0, 0, 0.);
+
+    /* 사용자 아바타 배경 */
+    --channel-avatar-bg: transparent;
+
+    /* 클랜 태그 배경 */
+    --channel-clan-tag-bg: rgba(0, 0, 0, 0);
+}
+
+/* 1. 서버 및 채널 목록 전체 */
+nav.container__2637a {
+    background-color: var(--channel-sidebar-bg) !important;
+}
+
+/* 2. 읽지 않은 메시지 표시 바 */
+.bar__3b95d.unreadBar__629e4 {
+    background-color: var(--channel-unread-bar-bg) !important;
+}
+
+/* 3. 채널 카테고리 구분선 */
+.sectionDivider__629e4 {
+    background-color: var(--channel-section-divider-bg) !important;
+}
+
+/* 4. 읽지 않은 채널 표시점 */
+.unread__2ea32.unreadImportant__2ea32 {
+    background-color: var(--channel-unread-indicator-bg) !important;
+}
+
+/* 5. 채널 링크 배경 */
+a.link__2ea32 {
+    background-color: var(--channel-link-bg) !important;
+}
+
+/* 6. 사용자 아바타 배경 */
+.userAvatar__55bab.avatar__07f91.avatarSmall__07f91 {
+    background-color: var(--channel-avatar-bg) !important;
+}
+
+/* 7. 클랜 태그 배경 */
+.clanTag__07f91 {
+    background-color: var(--channel-clan-tag-bg) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   디스코드 서버 목록 배경색 설정
+   검정색 / 투명도 0.1
+   ======================================== */
+
+:root {
+    --guild-background: rgba(0, 0, 0, 0);
+}
+
+/* 1. 서버 목록 전체 배경 */
+nav.wrapper_ef3116.guilds__5e434 {
+    background-color: var(--guild-background) !important;
+}
+
+/* 2. 읽지 않은 멘션 표시 바 */
+.bar__3b95d.unreadMentionsBar_ef3116 {
+    background-color: var(--guild-background) !important;
+}
+
+/* 3. 서버 구분선 */
+.guildSeparator__252b6 {
+    background-color: var(--guild-background) !important;
+}
+
+/* 4. 서버 아이콘 및 선택 표시 요소 */
+.item__58105 {
+    background-color: var(--guild-background) !important;
+}
+
+/* 5. 서버 아이콘 배경 */
+.childWrapper__6e9f8 {
+    background-color: var(--guild-background) !important;
+}
+
+/* 6. 알림 배지 */
+.iconBadge__650eb {
+    background-color: var(--guild-background) !important;
+}
+
+/* 7. 원형 아이콘 버튼 */
+.circleIconButton__5bc7e {
+    background-color: var(--guild-background) !important;
+}
+
+/* 8. 서버 탐색 아이콘 버튼 */
+.discoveryIcon_ef3116 {
+    background-color: var(--guild-background) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 채팅 영역 배경색 및 투명도 */
+.chat_f75fb0 {
+    background-color: rgba(40, 40, 40, 0) !important;
+    background-image: none !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 1. 채널 헤더 배경 */
+.title_f75fb0 {
+    background-color: rgba(40, 40, 40, 0) !important;
+}
+
+
+
+/* 3. 검색창 배경 */
+.searchBar__25bec {
+    background-color: rgba(0, 100, 255, 0) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 채팅 영역 */
+.chatContent_f75fb0,
+.wrapper_d852db,
+.wrapper_fc8177.cozy_fc8177,
+.avatar_fc8177,
+.blob_fc8177,
+.attachment_fc8177,
+.content__908e2,
+.embedFull__623de,
+.mention.wrapper_f61d60.interactive,
+.buttonsInner__5126c.popover_f84418.wrapper_f7ecac,
+.separator_f84418,
+.channelTextArea_f75fb0.channelTextArea__74017,
+.scrollableContainer__74017.themedBackground__74017,
+.sprite__04eed.spriteGreyscale__04eed.active__04eed {
+    background-color: transparent !important;
+}
+
+/* 배경 그라데이션 제거 */
+.chatGradient__36d07.chatGradientBase__36d07 {
+    background: transparent !important;
+    background-image: none !important;
+}
+
+/* 임베드 테두리와 그림자 제거 */
+.embedFull__623de {
+    border-color: transparent !important;
+    box-shadow: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 멤버 목록 전체 배경 */
+.container_c8ffbb {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 멤버 목록 스크롤 영역 */
+.members_c8ffbb.scrollbarGutterStable_d125d2.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 사용자 카드 배경 */
+.container__0f2e8.openOnHover__0f2e8.usesCardRows__0f2e8 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 온라인 및 오프라인 멤버 배경 */
+.member__5d473.member_c8ffbb.container__91a9d {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 개인 메시지 영역 배경 */
+.privateChannels_e6b769,
+.scroller__99e7c.scrollbarGutterStable_d125d2.thin_d125d2.scrollerBase_d125d2.fade_d125d2 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 버튼 배경 */
+.button_a22cb0 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 배지 배경 */
+.badge_c2b88c.expressive_c2b88c {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 구분선 배경 */
+.sectionDivider_e6b769 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 선택된 메시지 항목 배경 */
+.interactive_f88cfd.interactive__972a0.interactiveSelected__972a0.selected_f88cfd {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 닫기 버튼 배경 */
+.innerCloseButton__972a0 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 클랜 태그 배경 */
+.chipletContainerInner__10651.clanTag__972a0 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+/* 그라데이션 배경 제거 */
+.container_df39b2 {
+    background-color: transparent !important;
+    background-image: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 프로필 사이드바 배경 */
+.aside_f58343 {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+/* 프로필 외부 컨테이너 */
+.outer_c0bea0.user-profile-sidebar {
+    background-color: rgba(0, 0, 0, 0.1) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 계정 패널 배경 */
+section.panels__5e434 {
+    background-color: rgba(100, 100, 100, 0.2) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ========================================
+   2. 객체별 배경 적용
+   ======================================== */
+
+/* 모달 바깥 오버레이 설정 변수 */
+:root {
+    /* 오버레이 색상 및 투명도 */
+    --overlay-color: rgba(39, 39, 39, 0.2);
+
+    /* 블러 강도 */
+    --overlay-blur: 15px;
+}
+
+/* 모달 바깥 어두운 오버레이 */
+div.scrim__40128 {
+    background-color: var(--overlay-color) !important;
+
+    backdrop-filter: blur(var(--overlay-blur));
+    -webkit-backdrop-filter: blur(var(--overlay-blur));
+}
+/* 모달 배경 */
+div.container__8a031.modal_e44912 {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* 모달 내부 배경 */
+div.theme-dark.images-dark.modalContentInner_e44912 {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* 사이드바 배경 */
+aside.sidebar__409aa {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* 검색 입력 영역 */
+div.wrapper__72c38.container__75098 {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* 선택된 메뉴 항목 */
+div.item_caf372.active_caf372 {
+    background-color: rgba(136, 136, 136, 0.3) !important;
+}
+
+/* 메뉴 트랙 */
+div.track_e4d939 {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* 트랙의 썸(슬라이더 손잡이) */
+div.thumb_e4d939 {
+    background-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+/* 콘텐츠 영역 */
+div.content_e9e3ed.mobileNavigationOpen_e9e3ed {
+    background-color: rgba(104, 104, 104, 0.2) !important;
+}
+
+/* 콘텐츠 헤더 */
+div.contentHeader_e9e3ed.theme-dark.images-dark {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* 정보 영역 */
+div.container__35859.info__35859 {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+/* 아이콘 배경 */
+div.icon_cf9ac1 {
+    background-color: rgba(0, 0, 0, 0.0) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 콘텐츠 영역 */
+div.content_e9e3ed {
+    background-color: rgba(0, 0, 0, 0.3) !important;
+    background-image: none !important;
+}
+
+/* 버튼 내부 래퍼 */
+div.buttonChildrenWrapper_a22cb0 {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: none !important;
+}
+
+/* 스위치 표시 영역 */
+div.switchIndicator_a28278 {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: none !important;
+}
+
+/* 아이콘 프레임 - 뒤쪽 */
+div.frame__99961.backIcon__99961.frameRounded__99961 {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: none !important;
+}
+
+/* 아이콘 프레임 - 앞쪽 */
+div.frame__99961.frontIcon__99961.frameRounded__99961 {
+    background-color: rgba(0, 0, 0, 0) !important;
+    background-image: none !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 2. 버튼 내부 래퍼 */
+div.buttonChildrenWrapper_a22cb0 {
+    background-color: rgba(59, 59, 59, 0.5) !important;
+    border: 1px solid rgba(106, 133, 106, 0) !important;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+div.buttonChildrenWrapper_a22cb0:hover {
+    background-color: rgba(124, 136, 124, 0.5) !important;
+    border-color: rgba(255, 255, 0, 0) !important;
+}
+/*여기까지 배경색 투명화부분          여기까지 배경색 투명화부분          여기까지 배경색 투명화부분          
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ
+ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ*/
+
+
+
+
+
+
+
+
+
+
